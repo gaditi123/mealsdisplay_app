@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/meal_item.dart';
+import '../dummy_data.dart';
 import '../models/meal.dart';
 
 class CategoryMealsScreen extends StatefulWidget {
   static const routeName = '/category-meals';
-
   final List<Meal> availableMeals;
 
   CategoryMealsScreen(this.availableMeals);
@@ -17,11 +17,10 @@ class CategoryMealsScreen extends StatefulWidget {
 class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
   String categoryTitle;
   List<Meal> displayedMeals;
-  var _loadedInitData = false;
+  bool _loadedInitData = false;
 
   @override
   void initState() {
-    // ...
     super.initState();
   }
 

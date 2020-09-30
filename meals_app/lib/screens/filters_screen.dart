@@ -30,11 +30,11 @@ class _FiltersScreenState extends State<FiltersScreen> {
   }
 
   Widget _buildSwitchListTile(
-    String title,
-    String description,
-    bool currentValue,
-    Function updateValue,
-  ) {
+      String title,
+      String description,
+      bool currentValue,
+      Function updateValue,
+      ) {
     return SwitchListTile(
       title: Text(title),
       value: currentValue,
@@ -82,9 +82,9 @@ class _FiltersScreenState extends State<FiltersScreen> {
                   'Gluten-free',
                   'Only include gluten-free meals.',
                   _glutenFree,
-                  (newValue) {
+                      (newValue) {
                     setState(
-                      () {
+                          () {
                         _glutenFree = newValue;
                       },
                     );
@@ -94,9 +94,9 @@ class _FiltersScreenState extends State<FiltersScreen> {
                   'Lactose-free',
                   'Only include lactose-free meals.',
                   _lactoseFree,
-                  (newValue) {
+                      (newValue) {
                     setState(
-                      () {
+                          () {
                         _lactoseFree = newValue;
                       },
                     );
@@ -106,9 +106,9 @@ class _FiltersScreenState extends State<FiltersScreen> {
                   'Vegetarian',
                   'Only include vegetarian meals.',
                   _vegetarian,
-                  (newValue) {
+                      (newValue) {
                     setState(
-                      () {
+                          () {
                         _vegetarian = newValue;
                       },
                     );
@@ -118,9 +118,9 @@ class _FiltersScreenState extends State<FiltersScreen> {
                   'Vegan',
                   'Only include vegan meals.',
                   _vegan,
-                  (newValue) {
+                      (newValue) {
                     setState(
-                      () {
+                          () {
                         _vegan = newValue;
                       },
                     );
