@@ -6,6 +6,13 @@ enum Complexity {
   Hard,
 }
 
+enum Best {
+  Sandesh,
+  Sandesh1,
+  Sandesh2,
+}
+
+
 enum Affordability {
   Affordable,
   Pricey,
