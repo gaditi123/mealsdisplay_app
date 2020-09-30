@@ -70,7 +70,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'DeliMeals',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.purple,
         accentColor: Colors.amber,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
@@ -81,7 +81,7 @@ class _MyAppState extends State<MyApp> {
             body2: TextStyle(
               color: Color.fromRGBO(20, 51, 51, 1),
             ),
-            title: TextStyle(
+            headline6: TextStyle(
               fontSize: 20,
               fontFamily: 'RobotoCondensed',
               fontWeight: FontWeight.bold,
@@ -97,7 +97,9 @@ class _MyAppState extends State<MyApp> {
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(_toggleFavorite,_isMealFavorite),
         FiltersScreen.routeName: (ctx) => FiltersScreen(_filters, _setFilters),
       },
-
+      onGenerateRoute: (settings) {
+        print(settings.arguments);
+      },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
           builder: (ctx) => CategoriesScreen(),

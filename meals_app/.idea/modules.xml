@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mealsapp.iml" filepath="$PROJECT_DIR$/mealsapp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/mealsapp_android.iml" filepath="$PROJECT_DIR$/android/mealsapp_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/meals_app.iml" filepath="$PROJECT_DIR$/.idea/meals_app.iml" />
     </modules>
   </component>
 </project>
+
